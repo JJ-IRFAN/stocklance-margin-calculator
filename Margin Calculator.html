@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        body{
+background-color: #000000;
+						}
+p{
+color:blue;
+}
+    </style>
+ <body>
+     <script>
+         function stock(){
+         var quantity,lev,price,inv;
+         lev=Number(document.getElementById("lev").value);
+         price=Number(document.getElementById("price").value);
+         inv=Number(document.getElementById("inv").value);
+											quantity=(inv*lev)/price;
+         alert("The quantity is " + quantity);
+					}
+         
+     </script>
+    <p>Enter investment:</p> <input id="inv"><br><br>
+  <p>Enter stock price :</p> <input id="price"><br><br>
+     <p>Enter leverage :</p> <input id = "lev"><br><br>
+     <button onclick="stock();"> Calculate</button>
+    </body>
+</html>
