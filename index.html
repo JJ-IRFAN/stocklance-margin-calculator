@@ -45,9 +45,9 @@
          var quantity,lev,price,inv;
          lev=Number(document.getElementById("lev").value);
          price=Number(document.getElementById("price").value);
-         inv=Number(document.getElementById("inv").value);
-											quantity=(inv*lev)/price;
-         alert("The quantity is " + Math.floor(quantity));
+         inv=Number(document.getElementById("inv").value)
+	 quantity=(inv*lev)/price;
+         alert("You can buy " + Math.floor(quantity) + " stocks");
 					}
          
 	 </script>
