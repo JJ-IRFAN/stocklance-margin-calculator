@@ -1,19 +1,49 @@
+
 <!DOCTYPE html>
 
 <html>
+	<head>
+		<title>
+			Stocklance Margin Calculator
+		</title>
+	</head>
     <style>
-        body{
-background-color: #000000;
-						}
-p{
-color:blue;
+         body{
+                background-color: #000000;
+			 }
+         p{
+            color:#ffffff;
+            font-style: cursive;
+            font-size:28px;
+
+          }
+          div{
+            text-align: center;
+          }
+          input{
+            width: 500px;
+            height: 30px
+          }
+          h1{
+            font-style: oblique;
+            font size: 30;
+            background-color: gray;
+            color:white;
+            text-align: center;
+          }
+          button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
     </style>
-<head>
-<title>
-Stocklance Margin Calculator
-</title>
-</head>
  <body>
      <script>
          function stock(){
@@ -26,9 +56,11 @@ Stocklance Margin Calculator
 					}
          
      </script>
-    <p>Enter investment:</p> <input id="inv"><br><br>
-  <p>Enter stock price :</p> <input id="price"><br><br>
-     <p>Enter leverage :</p> <input id = "lev"><br><br>
-     <button onclick="stock();"> Calculate</button>
+     <div><img src="Logopng.png" height="200" width="350"></div>
+     <h1> Leverage Calculator </h1>
+    <p align="center">Enter investment:</p><div> <input id="inv"><br></div>
+  <p align="center">Enter stock price :</p> <div><input id="price"><br></div>
+     <p align="center">Enter leverage :</p> <div><input id = "lev"></div><br><br>
+     <div><button onclick="stock();"> Calculate</button></div>
     </body>
 </html>
